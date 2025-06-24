@@ -6,12 +6,12 @@
   <style>
     .spectrum-container {
       display: flex;
-      width: 800px;
-      height: 60px;
-      margin: 40px auto;
-      border-radius: 20px;
+      width: 400px;
+      height: 32px;
+      margin: 20px auto;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
     }
     .spectrum-segment {
       flex: 1;
@@ -19,12 +19,13 @@
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 12px;
+      font-size: 10px;
       font-family: sans-serif;
       cursor: pointer;
       transition: transform 0.1s;
       position: relative;
       text-decoration: none;
+      padding: 0;
     }
     .spectrum-segment:visited {
       color: #fff;
@@ -52,6 +53,7 @@
       text-align: center;
       width: 100%;
       pointer-events: none;
+      line-height: 1.1;
     }
   </style>
 </head>
