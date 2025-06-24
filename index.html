@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clickable Color Spectrum</title>
+  <style>
+    .spectrum-container {
+      display: flex;
+      width: 800px;
+      height: 60px;
+      margin: 40px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .spectrum-segment {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 12px;
+      font-family: sans-serif;
+      cursor: pointer;
+      transition: transform 0.1s;
+      position: relative;
+      text-decoration: none;
+    }
+    .spectrum-segment:visited {
+      color: #fff;
+    }
+    .spectrum-segment:hover {
+      transform: scaleY(1.1);
+      z-index: 1;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .uv { background: #7c00a7; }
+    .violet { background: #8f00ff; }
+    .blue { background: #0093ff; }
+    .green { background: #00ff00; color: #222; }
+    .yellow { background: #ffff00; color: #222; }
+    .orange { background: #ff9900; color: #222; }
+    .red { background: #ff0000; }
+    .ir { background: #7c2a00; }
+    .label {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="spectrum-container">
+    <a class="spectrum-segment uv" href="https://syronoptics.com/collections/uv" target="_blank">
+      <span class="label">UV<br>&lt;400</span>
+    </a>
+    <a class="spectrum-segment violet" href="https://syronoptics.com/collections/violet-bandpass-filter" target="_blank">
+      <span class="label">Violet<br>400-450</span>
+    </a>
+    <a class="spectrum-segment blue" href="https://syronoptics.com/collections/blue-bandpass-filter" target="_blank">
+      <span class="label">Blue<br>450-500</span>
+    </a>
+    <a class="spectrum-segment green" href="https://syronoptics.com/collections/green-bandpass-filter" target="_blank">
+      <span class="label">Green<br>500-570</span>
+    </a>
+    <a class="spectrum-segment yellow" href="https://syronoptics.com/collections/yellow-bandpass-filter" target="_blank">
+      <span class="label">Yellow<br>570-590</span>
+    </a>
+    <a class="spectrum-segment orange" href="https://syronoptics.com/collections/orange-bandpass-filter" target="_blank">
+      <span class="label">Orange<br>590-610</span>
+    </a>
+    <a class="spectrum-segment red" href="https://syronoptics.com/collections/red-bandpass-filter" target="_blank">
+      <span class="label">Red<br>610-760</span>
+    </a>
+    <a class="spectrum-segment ir" href="https://syronoptics.com/collections/nir" target="_blank">
+      <span class="label">NIR<br>&gt;760</span>
+    </a>
+  </div>
+</body>
+</html> 
